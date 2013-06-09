@@ -42,6 +42,9 @@ function Update () {
 			newLocalEulerAngles.y += 270;
 		transform.localEulerAngles = newLocalEulerAngles;
 	}
+	else {
+		motor.inputMoveDirection = transform.rotation * directionVector;
+	}
 	
 	
 	// Apply the direction to the CharacterMotor
